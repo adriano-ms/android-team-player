@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miTeam"
+        android:title="@string/mi_team" />
+    <item
+        android:id="@+id/miPlayer"
+        android:title="@string/mi_player" />
+</menu>
