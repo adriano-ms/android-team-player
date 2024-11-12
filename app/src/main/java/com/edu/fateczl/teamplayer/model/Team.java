@@ -1,11 +1,13 @@
 package com.edu.fateczl.teamplayer.model;
 
+import java.util.Objects;
+
 /**
  * @author Adriano M Sanchez
  */
 public class Team {
 
-    private int code;
+    private Integer code;
     private String name;
     private String city;
 
@@ -13,7 +15,7 @@ public class Team {
         super();
     }
 
-    public int getCode() {
+    public Integer getCode() {
         return code;
     }
 
@@ -39,10 +41,8 @@ public class Team {
 
     @Override
     public String toString() {
-        return "Team{" +
-                "code=" + code +
-                ", name='" + name + '\'' +
-                ", city='" + city + '\'' +
-                '}';
+        return new StringBuffer()
+                .append(code).append(". ").append(name)
+                .append(" | City: ").append(city).toString();
     }
 }

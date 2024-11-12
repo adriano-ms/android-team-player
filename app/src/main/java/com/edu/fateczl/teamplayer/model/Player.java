@@ -3,24 +3,25 @@ package com.edu.fateczl.teamplayer.model;
 import androidx.annotation.NonNull;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 /**
  * @author Adriano M Sanchez
  */
 public class Player {
 
-    private int id;
+    private Integer id;
     private String name;
     private LocalDate birthdate;
-    private float height;
-    private float weight;
+    private Float height;
+    private Float weight;
     private Team team;
 
     public Player(){
         super();
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -44,7 +45,7 @@ public class Player {
         this.birthdate = birthdate;
     }
 
-    public float getHeight() {
+    public Float getHeight() {
         return height;
     }
 
@@ -52,7 +53,7 @@ public class Player {
         this.height = height;
     }
 
-    public float getWeight() {
+    public Float getWeight() {
         return weight;
     }
 
@@ -71,13 +72,12 @@ public class Player {
     @NonNull
     @Override
     public String toString() {
-        return "Player{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", birthdate=" + birthdate +
-                ", height=" + height +
-                ", weight=" + weight +
-                ", team=" + team +
-                '}';
+        return new StringBuffer()
+                .append(id).append(". ")
+                .append(name)
+                .append(" H:").append(height).append("m ")
+                .append("W:").append(weight).append("kg ")
+                .append("Team:").append(team.getName()).toString();
     }
+
 }

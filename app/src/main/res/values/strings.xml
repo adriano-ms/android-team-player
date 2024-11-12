@@ -16,4 +16,6 @@
     <string name="bt_delete">Delete</string>
     <string name="bt_find">Find</string>
     <string name="bt_list">List</string>
+    <string name="error_title">Error!</string>
+    <string name="not_found_msg">Not found!</string>
 </resources>
